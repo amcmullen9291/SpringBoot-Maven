@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="address" class="SpringBoot.basics.containerandbean.Address">
+        <constructor-arg index="0" value="100 "/>
+        <constructor-arg index="1" value=" Main Street"/>
+        <!-- collaborators and configuration for this bean go here -->
+<!--        these are the parameters for the constructor-->
+    </bean>
+
+    <bean id="person" class="SpringBoot.basics.containerandbean.Person">
+        <property name="fullName" value="John Doe"/>
+        <property name="address" ref="address"/>
+        <!-- collaborators and configuration for this bean go here -->
+<!--        these are setters for the attributes-->
+<!--        ref references a bean-->
+    </bean>
+
+    <!-- more bean definitions go here -->
+
+</beans>
