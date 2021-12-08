@@ -15,7 +15,7 @@ public class ConfigApp {
 
         System.out.println(nameBean.getFirstName() + " " + nameBean.getLastName()); //test
 
-        //with config annotation below:
+        //with configuration annotation below:
         ApplicationContext constructor2 = new AnnotationConfigApplicationContext(BeanFullModeConfig.class);
         Name nameBean2 = constructor2.getBean(Name.class);
         Person personBean2 = constructor2.getBean(Person.class);
