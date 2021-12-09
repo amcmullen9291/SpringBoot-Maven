@@ -12,3 +12,4 @@ public class Person {
 
     public String getFullName(){ return fullName;}
 }
+//    A @Configuration is also a @Component, but a @Component cannot act like a @Configuration.

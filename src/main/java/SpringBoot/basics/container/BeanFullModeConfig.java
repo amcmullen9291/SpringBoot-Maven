@@ -15,5 +15,5 @@ public class BeanFullModeConfig {
         // now when referenced, they point to the same piece of memory.
         //now, the Person Bean 'needs' the Name bean
     }
-
 }
+//    A @Configuration is also a @Component, but a @Component cannot act like a @Configuration.
